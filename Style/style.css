@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Zilla+Slab:wght@500&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .ripple-wrap {
   display: none;
   overflow: hidden;
@@ -22,7 +27,7 @@
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #1c1d1d;
   }
 
   41% {
@@ -31,7 +36,7 @@
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #1c1d1d;
   }
   100% {
     border-width: 1500px;
@@ -39,7 +44,7 @@
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #009688;
+    border-color: #1c1d1d;
   }
 }
 
@@ -53,7 +58,7 @@
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #1c1d1d;
   }
   41% {
     height: 0;
@@ -61,7 +66,7 @@
     border-width: 1500px;
     margin-top: -1500px;
     margin-left: -1500px;
-    border-color: #009688;
+    border-color: #1c1d1d;
   }
   100% {
     border-width: 1500px;
@@ -69,7 +74,7 @@
     width: 2000px;
     margin-top: -2500px;
     margin-left: -2500px;
-    border-color: #009688;
+    border-color: #1c1d1d;
   }
 }
 
@@ -79,7 +84,7 @@
   width: 0;
   border-width: 0px;
   border-style: solid;
-  border-color: #00796b;
+  border-color: #d7e1e3;
   border-radius: 100%;
   position: absolute;
   top: 300px;
@@ -101,41 +106,57 @@
   animation-fill-mode: forwards;
 }
 
-/* This bit is just to look pretty. Not relevant to the implementation */
-
 body {
-  font-size: 1.2em;
-  line-height: 1.4;
-  background: #009688;
+  overflow: hidden;
+  background: #1c1d1d;
+  background-image: url("../Assets/blackorchid.png");
 }
 
 a {
-  color: #004d40;
-  font-weight: bold;
+  text-decoration: none;
+  color: #0cb8f7;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 .wrap {
-  margin: 48px auto;
-  max-width: 580px;
+  margin: 40px auto;
+  max-width: 640px;
   text-align: justify;
 }
 
 h1 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
-  color: #f7e2bd;
+  background: #0cb8f7;
+  background: -webkit-linear-gradient(to left, #0cb8f7 0%, #096af2 100%);
+  background: -moz-linear-gradient(to left, #0cb8f7 0%, #096af2 100%);
+  background: linear-gradient(to left, #0cb8f7 0%, #096af2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
   line-height: 35px;
-  color: #fff8dc;
+  color: #d7e1e3;
 }
 
 ul li {
-  color: #fff8dc;
+  color: #d7e1e3;
   font-family: "Zilla Slab", serif;
   font-size: 22px;
   line-height: 45px;
+}
+
+.webinar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webinar img {
+  width: 50%;
 }
